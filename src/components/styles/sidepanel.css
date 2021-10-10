@@ -1,0 +1,99 @@
+/* #################################################################################################### */
+/* side panel */
+/* #################################################################################################### */
+@keyframes side{
+    from{
+        right:100%;
+    }
+    to{
+        right:79.4%;
+    }
+}
+.sidepanel-out{
+    animation-duration: 5ms;
+    width:100%;
+    height:100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 31;
+}
+.sidepanel-mid-outer{
+    display: flex;
+}
+.sidepanel-inner{
+    width:20%;
+    height:97vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    animation-name:side;
+    animation-duration: 0.5s;
+    position: absolute;
+}
+.sidepanel-right{
+    width:79.2%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left:20.7%
+}
+.side-inner-outer{
+    width:100%;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.side-signin{
+    cursor: pointer;
+    width:90%;
+    height:70px;
+    margin-top:10px;
+    background-image:linear-gradient(to right, #000428  , #004e92);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.side-signin:hover{
+    background-image:linear-gradient(to right, #000000  , #515353);
+}
+.side-other{
+    width:90%;
+    height:100px;
+    margin-top:10px;
+}
+.side-other-ele{
+    margin-top: 10px;
+    cursor: pointer;
+    width:100%;
+    height:3rem;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.side-other-ele:hover{
+    background-image:linear-gradient(to right, #000428  , #004e92);
+    color:white;
+}
+.side-logo{
+    width:50%;
+    height:5rem;
+    
+}

@@ -1,0 +1,39 @@
+.products-outer{
+    width:100%;
+    height:250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.products-row{
+    width:98%;
+    height:60vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.products-row-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:20%;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+
+
+
+.products-row-showcase{
+    width:100%;
+    height:80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

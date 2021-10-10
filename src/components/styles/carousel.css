@@ -1,0 +1,66 @@
+.carousel-outer{
+    width:100%;
+    height:87vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gap-filler{
+    width:100%;
+    height:13vh;
+}
+.carousel-left{
+    width:55%;
+    height:80vh;
+}
+.carousel-left-sale1{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.carousel-left-sale1:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.carousel-right{
+    width:40%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-right-top{
+    width:100%;
+    height:48%;
+    border-radius: 20px;
+}
+.carousel-right-top-sale2{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.carousel-right-top-sale2:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
+
+.carousel-right-bottom{
+    width:100%;
+    height:48%;
+    border-radius: 20px;
+}
+.carousel-right-bottom-sale3{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.carousel-right-bottom-sale3:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
