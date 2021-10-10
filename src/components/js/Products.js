@@ -28,7 +28,7 @@ function rowDisplay(catogary,men,women,jewelery,electronics,props)
 
 const Products = (props) => 
 {
-    const [catogary,setcatogary]=useState(["Electronics","Men's Clothing","Women's Clothing","Jewelery"])
+    var catogary = ["Electronics","Men's Clothing","Women's Clothing","Jewelery"]
     const [electronics, setElectronics] = useState([])
     const [men, setMen] = useState([])
     const [women, setWomen] = useState([])

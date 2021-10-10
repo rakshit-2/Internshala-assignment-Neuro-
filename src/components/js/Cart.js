@@ -11,7 +11,7 @@ const Cart = (props) =>
         {
             cartCardList.push(<div className="cart-card">
                                 <div className="cart-card-image-out">
-                                    <img src={obj[i].image} className="cart-card-image"/>
+                                    <img src={obj[i].image} className="cart-card-image" alt=""/>
                                 </div>
                                 <div className="cart-card-title">
                                     {obj[i].title}
@@ -20,7 +20,7 @@ const Cart = (props) =>
                                     $ {obj[i].price}
                                 </div>
                                 <div className="cart-card-reviews">
-                                    Revires {obj[i].id}
+                                    reviews {obj[i].id}
                                 </div>
                             </div>)
         }
@@ -38,7 +38,7 @@ const Cart = (props) =>
         {
             totalAmount=totalAmount+props[i].price;
         }
-        totalAmount.toFixed(2);
+        totalAmount = totalAmount.toFixed(2);
         return totalAmount;
     }
 
@@ -81,7 +81,7 @@ const Cart = (props) =>
                         CHECKOUT
                     </div>
                     <div className="cart-right-ads">
-                        <img src={sale3} className="cart-right-ads-image"/>
+                        <img src={sale3} className="cart-right-ads-image" alt=""/>
                     </div>
                 </div>
             </div>

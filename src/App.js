@@ -2,7 +2,7 @@ import "./App.css";
 import Cart from "./components/js/Cart";
 import Main from "./components/js/main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Sidepanel from "./components/js/sidepanel";
 
 function App() {

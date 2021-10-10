@@ -90,30 +90,6 @@ function addtocart(catogary,men,women,jewelery,electronics)
 }
 
 
-
-
-function infoChecker(catogary,men,women,jewelery,electronics)
-{
-    if(catogary==="Men's Clothing")
-    {
-        return men.description
-    }
-    else if(catogary==="Women's Clothing")
-    {
-        return women.description
-    }
-    else if(catogary==="Electronics")
-    {
-        return electronics.description
-    }
-    else if(catogary==="Jewelery")
-    {
-        return jewelery.description
-    }
-    else{return("no info")}
-}
-
-
 const Card = (props) => 
 {
     var arr = []
@@ -121,7 +97,7 @@ const Card = (props) =>
     {
         arr.push(<div className="products-card">
                     <div className="products-card-top" >
-                        <img src={imagePlacer(props.catogary, props.men[i], props.women[i], props.jewelery[i], props.electronics[i])} className="products-card-image"/>
+                        <img src={imagePlacer(props.catogary, props.men[i], props.women[i], props.jewelery[i], props.electronics[i])} className="products-card-image" alt=""/>
                     </div>
                     <div className="products-card-bottom">
                         <div className="product-card-bottom-title">
