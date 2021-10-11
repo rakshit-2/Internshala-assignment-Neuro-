@@ -1,5 +1,5 @@
-import '../styles/jewelery.css';
-import Navbar from './navbar';
+import './jewelery.css';
+import Navbar from '../../molecules/navbarFile/navbar';
 import { useState } from 'react';
 import axios from 'axios';
 

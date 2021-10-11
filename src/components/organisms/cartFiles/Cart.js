@@ -1,6 +1,6 @@
-import '../styles/cart.css';
-import Navbar from './navbar';
-import sale3 from '../../images/sale3.JPG';
+import './cart.css';
+import Navbar from '../../molecules/navbarFile/navbar';
+import sale3 from '../../../images/sale3.JPG';
 import * as React from 'react';
 import ClearIcon from '@mui/icons-material/Clear';
 import Button from '@mui/material/Button';

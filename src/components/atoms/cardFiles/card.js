@@ -1,4 +1,4 @@
-import '../styles/card.css'
+import './card.css';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';

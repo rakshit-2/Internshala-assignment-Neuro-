@@ -1,5 +1,5 @@
-import '../styles/information.css';
-import Navbar from './navbar';
+import './information.css';
+import Navbar from '../../molecules/navbarFile/navbar';
 import * as React from 'react';
 
 const Information = (props) => 

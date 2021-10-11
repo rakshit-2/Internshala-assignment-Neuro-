@@ -1,4 +1,4 @@
-import '../styles/navbar.css'
+import './navbar.css'
 import { useHistory } from 'react-router';
 import * as React from 'react';
 import Button from '@mui/material/Button';

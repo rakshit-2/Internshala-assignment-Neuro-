@@ -1,7 +1,7 @@
-import '../styles/carousel.css'
-import sale1 from '../../images/sale1.JPG'
-import sale2 from '../../images/sale2.JPG'
-import sale3 from '../../images/sale3.JPG'
+import './carousel.css';
+import sale1 from '../../../images/sale1.JPG';
+import sale2 from '../../../images/sale2.JPG';
+import sale3 from '../../../images/sale3.JPG';
 
 const Carousel = (props) => 
 {

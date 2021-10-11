@@ -1,5 +1,5 @@
-import '../styles/mans.css';
-import Navbar from './navbar';
+import './mans.css';
+import Navbar from '../../molecules/navbarFile/navbar';
 import { useState } from 'react';
 import axios from 'axios';
 

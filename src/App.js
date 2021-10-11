@@ -1,14 +1,14 @@
 import "./App.css";
-import Cart from "./components/js/Cart";
-import Main from "./components/js/main";
+import Cart from "./components/organisms/cartFiles/Cart";
+import Main from "./components/organisms/mainFile/main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from 'react';
-import Sidepanel from "./components/js/sidepanel";
-import Mans from "./components/js/mans";
-import Women from "./components/js/women";
-import Electronics from "./components/js/electronics";
-import Jewelery from "./components/js/jewelery";
-import Information from  "./components/js/information";
+import Sidepanel from "./components/organisms/sidepanelFiles/sidepanel";
+import Mans from "./components/organisms/manFiles/mans";
+import Women from "./components/organisms/womenFiles/women";
+import Electronics from "./components/organisms/electronicsFile/electronics";
+import Jewelery from "./components/organisms/jeweleryFile/jewelery";
+import Information from  "./components/organisms/informationFile/information";
 
 
 function App() {

@@ -1,5 +1,5 @@
-import '../styles/sidepanel.css'
-import Navbar from './navbar';
+import './sidepanel.css';
+import Navbar from '../../molecules/navbarFile/navbar';
 import { useHistory } from 'react-router';
 
 const Sidepanel = (props) => 

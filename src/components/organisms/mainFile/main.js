@@ -1,8 +1,7 @@
-import '../styles/navbar.css';
-import Navbar from './navbar';
-import Carousel from './carousel';
-import Products from './Products';
-import '../styles/main.css';
+import Navbar from '../../molecules/navbarFile/navbar';
+import Carousel from '../../molecules/carouselFile/carousel';
+import Products from '../../molecules/productsFile/Products';
+import './main.css';
 
 const Main = (props) => 
 {

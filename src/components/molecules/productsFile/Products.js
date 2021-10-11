@@ -1,7 +1,7 @@
-import '../styles/Products.css'
+import './Products.css'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from './card';
+import Card from '../../atoms/cardFiles/card';
 
 function rowDisplay(catogary,men,women,jewelery,electronics,props)
 {
