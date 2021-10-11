@@ -1,4 +1,10 @@
 import '../styles/card.css'
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import InfoIcon from '@mui/icons-material/Info';
+import { useHistory } from 'react-router';
+
 
 function imagePlacer(catogary,men,women,jewelery,electronics)
 {
@@ -90,8 +96,35 @@ function addtocart(catogary,men,women,jewelery,electronics)
 }
 
 
+function infoDisplayer(catogary,men,women,jewelery,electronics,history)
+{
+    if(catogary==="Men's Clothing")
+    {
+        history.push("/information");
+        return men;
+
+    }
+    else if(catogary==="Women's Clothing")
+    {
+        history.push("/information");
+        return women;
+    }
+    else if(catogary==="Electronics")
+    {
+        history.push("/information");
+        return electronics;
+    }
+    else if(catogary==="Jewelery")
+    {
+        history.push("/information");
+        return jewelery;
+    }
+    else{return(1)}
+}
+
 const Card = (props) => 
 {
+    const history = useHistory();
     var arr = []
     for(let i=0;i<4;i++)
     {
@@ -107,9 +140,9 @@ const Card = (props) =>
                             <div className="products-card-bottom-price">
                                 $ {pricePlacer(props.catogary, props.men[i], props.women[i], props.jewelery[i], props.electronics[i])}
                             </div>
-                            <div className="products-card-bottom-cart" onClick={()=>{props.handleState(addtocart(props.catogary, props.men[i], props.women[i], props.jewelery[i], props.electronics[i]))}}>
-                                <i class="fas fa-plus-circle fa-2x"></i>{'\u00A0'}Add To Cart
-                            </div>
+                            
+                            <Button variant="contained" size="small" color="success" sx={{ fontSize: 15 }} startIcon={<InfoIcon />} onClick={()=>{props.infoButton(infoDisplayer(props.catogary, props.men[i], props.women[i], props.jewelery[i], props.electronics[i],history))}}>Info</Button>
+                            <Button variant="contained" size="small" color="success" sx={{ fontSize: 15 }} startIcon={<ShoppingCartIcon />} onClick={()=>{props.handleState(addtocart(props.catogary, props.men[i], props.women[i], props.jewelery[i], props.electronics[i]))}}>Cart</Button>
                         </div>
                     </div>
                 </div>)

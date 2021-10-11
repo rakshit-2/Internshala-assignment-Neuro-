@@ -15,7 +15,7 @@ const Main = (props) =>
                 <Carousel/>
             </div>
             <div>
-                <Products handleState={props.handleState}/>
+                <Products handleState={props.handleState} infoButton={props.infoButton}/>
             </div>
         </div>
     );

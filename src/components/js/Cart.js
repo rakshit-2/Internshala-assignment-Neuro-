@@ -1,6 +1,10 @@
 import '../styles/cart.css';
 import Navbar from './navbar';
 import sale3 from '../../images/sale3.JPG';
+import * as React from 'react';
+import ClearIcon from '@mui/icons-material/Clear';
+import Button from '@mui/material/Button';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
 
 const Cart = (props) => 
 {
@@ -77,18 +81,14 @@ const Cart = (props) =>
                     <div className="cart-right-total-amount">
                         $ {totalAmountCal(props.cartElements)}
                     </div>
-                    <div className="cart-right-checkout">
-                        CHECKOUT
-                    </div>
+                    <Button variant="contained" color="success" sx={{ fontSize: 25 }} startIcon={<BorderColorIcon />}>CHECKOUT</Button>
                     <div className="cart-right-ads">
                         <img src={sale3} className="cart-right-ads-image" alt=""/>
                     </div>
                 </div>
             </div>
             <div className="cart-bottom">
-                <div className="cart-empty-button" onClick={()=>{props.empty()}}>
-                    Empty Cart
-                </div>
+                <Button variant="contained" sx={{ fontSize: 25 }} startIcon={<ClearIcon />} onClick={()=>{props.empty()}}>Empty Cart</Button>
             </div>
         </div>
         </>

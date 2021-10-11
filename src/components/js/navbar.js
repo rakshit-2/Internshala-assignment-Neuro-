@@ -1,6 +1,17 @@
 import '../styles/navbar.css'
-import logo from "../../images/logo.png";
 import { useHistory } from 'react-router';
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import HomeIcon from '@mui/icons-material/Home';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import BallotIcon from '@mui/icons-material/Ballot';
+import ClearAllIcon from '@mui/icons-material/ClearAll';
+import PersonIcon from '@mui/icons-material/Person';
+
+
+
+
+
 
 const Navbar = (props) => 
 {
@@ -8,19 +19,10 @@ const Navbar = (props) =>
     return(
         <div className="outer-navbar">
             <div className="navbar-left">
-                <i class="fas fa-align-justify fa-2x" onClick = {() => {history.push("/sidepanel")}}></i>
-                <div className="navbar-left-logo">
-                    <img src={logo} className="navbar-left-logo-image" alt=""/>
-                </div>
-                <div className="navbar-left-home" onClick = {() => {history.push("/")}}>
-                    <i class="fas fa-home-lg-alt"></i>Home
-                </div>
-                <div className="navbar-left-cart" onClick = {() => {history.push("/cart")}}>
-                    <i class="fas fa-shopping-cart"></i>Cart
-                </div>
-                <div className="navbar-left-about">
-                    <i class="fab fa-atlassian"></i>About
-                </div>
+                <ClearAllIcon variant="contained" sx={{ fontSize: 50 }} onClick = {() => {history.push("/sidepanel")}}/>
+                <Button variant="none" size="small" startIcon={<HomeIcon />} onClick = {() => {history.push("/")}}>Home</Button>
+                <Button variant="none" size="small" startIcon={<ShoppingCartIcon />} onClick = {() => {history.push("/cart")}}>Cart</Button>
+                <Button variant="none" size="small" startIcon={<BallotIcon />} >All</Button>
             </div>
             <div className="navbar-right">
                 <div className="navbar-right-search">
@@ -29,9 +31,7 @@ const Navbar = (props) =>
                         <i class="fas fa-search"></i>
                     </div>
                 </div>
-                <div className="navbar-right-profile">
-                    <i class="fas fa-user"></i> Profile
-                </div>
+                <Button variant="none" size="small" startIcon={<PersonIcon />}>Profile</Button>
             </div>
         </div>
     );

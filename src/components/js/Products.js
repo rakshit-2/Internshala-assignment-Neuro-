@@ -14,7 +14,7 @@ function rowDisplay(catogary,men,women,jewelery,electronics,props)
                                 {catogary[i]}
                             </div>
                             <div className="products-row-showcase">
-                                <Card catogary={catogary[i]} men={men} women={women} jewelery={jewelery} electronics={electronics} handleState={props.handleState}/>
+                                <Card catogary={catogary[i]} men={men} women={women} jewelery={jewelery} electronics={electronics} handleState={props.handleState} infoButton={props.infoButton}/>
                                 
                             </div>
                         </div>

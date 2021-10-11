@@ -19,16 +19,16 @@ const Sidepanel = (props) =>
                                 Sign in
                             </div>
                             <div className="side-other">
-                                <div className="side-other-ele">
+                                <div className="side-other-ele" onClick = {() => {history.push("/mans")}}>
                                     Men's ClothingMen's 
                                 </div>
-                                <div className="side-other-ele">
+                                <div className="side-other-ele" onClick = {() => {history.push("/womens")}}>
                                     Women's Clothing
                                 </div>
-                                <div className="side-other-ele">
+                                <div className="side-other-ele" onClick = {() => {history.push("/electronics")}}>
                                     Electronics
                                 </div>
-                                <div className="side-other-ele">
+                                <div className="side-other-ele" onClick = {() => {history.push("/jewelery")}}>
                                     Jewelery
                                 </div>
                             </div>

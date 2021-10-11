@@ -9,10 +9,11 @@
     align-items: center;
     position: fixed;
     background-color: white;
+    z-index: 100;
 }
 
 .navbar-left{
-    width:35%;
+    width:30%;
     height:100%;
     border-bottom-left-radius:20px;
     display: flex;
@@ -76,7 +77,7 @@
 
 
 .navbar-right{
-    width:35%;
+    width:30%;
     height:100%;
     border-bottom-right-radius:20px;
     display: flex;

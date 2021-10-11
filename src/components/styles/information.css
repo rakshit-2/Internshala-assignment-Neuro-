@@ -1,0 +1,49 @@
+.info-outer{
+    width:100%;
+    height:85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.gap-filler{
+    width:100%;
+    height:15vh;
+}
+.info-left{
+    width:40%;
+    height:90%;
+}
+.info-left-image{
+    width:100%;
+    height:100%;
+}
+
+.info-right{
+    width:44%;
+    height:90%;
+}
+.info-right-title{
+    width:100%;
+    height:10%;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.info-right-desc{
+    width:100%;
+    height:40%;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.info-right-price{
+    width:100%;
+    height:5%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
